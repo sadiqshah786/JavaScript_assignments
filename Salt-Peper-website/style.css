@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family:JosefinSans-Light ;
+    src: url(assests/fonts/josefin-sans-new/JosefinSans-Light.ttf);
+}
+@font-face {
+    font-family:JosefinSans-Thin ;
+    src: url(assests/fonts/josefin-sans-new/JosefinSans-Thin.ttf);
+}
+@font-face {
+    font-family:JosefinSans-Regular ;
+    src: url(assests/fonts/josefin-sans-new/JosefinSans-Regular.ttf);
+}
+@font-face {
+    font-family:JosefinSans-SemiBold ;
+    src: url(assests/fonts/josefin-sans-new/JosefinSans-SemiBold.ttf);
+}
+@font-face {
+    font-family:Philosopher-Bold ;
+    src: url(assests/fonts/philosopher-new/Philosopher-Bold.ttf);
+}
+@font-face {
+    font-family:Philosopher-Italic ;
+    src: url(assests/fonts/philosopher-new/Philosopher-Italic.ttf);
+}
+@font-face {
+    font-family:Philosopher-Regular ;
+    src: url(assests/fonts/philosopher-new/Philosopher-Regular.ttf);
+}
+@font-face {
+    font-family:Dosis-Medium ;
+    src: url(assests/fonts/Dosis/Dosis-Medium.ttf);
+}
+@font-face {
+    font-family:Dosis-Light ;
+    src: url(assests/fonts/Dosis/Dosis-Light.ttf);
+}
+@font-face {
+    font-family:GildaDisplay-Regular ;
+    src: url(assests/fonts/gilda-display/GildaDisplay-Regular.ttf);
+}
+
+.banner {
+    width: 100%;
+    background-image: url(assests/img/saltnpepper-village-home.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 33px;
+}
+.logo_wrapper{
+    width: 10%;
+    margin-top: -8px;
+   
+}
+.order_button {
+    width: 20%;
+}
+.navbar_wrapper {
+    width: 70%;
+    margin-top: 20px;
+}
+.navbar_wrapper ul {
+    display: flex;
+    margin-left: 40px;
+  
+       
+}
+.navbar_wrapper ul li {
+    list-style-type: none;
+    margin-left: 35px;
+}
+.navbar_wrapper ul li a{
+    font-family:Philosopher-Regular ;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    transition: .2s;
+}
+.navbar_wrapper ul li a:hover,.footer_copyright a:hover{
+    color: #ED1C24;
+    transition: .4s;
+
+}
+.order_button{
+    text-align: right;
+    margin-top: -7px;
+}
+.order_button a{
+    font-family:Philosopher-Regular ;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    background-color: #ED1C24;
+    border: 2px solid #ED1C24;
+    border-radius: 5px;
+    padding: 8px 50px;
+    text-decoration: none;
+}
+.main_heading {
+    width: 60%;
+    margin: 150px auto 80px auto;
+}
+.banner_text h1{
+    color: #FFFFFF;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 100px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family:JosefinSans-Light ;
+    margin-bottom: 20px;
+}
+.saltimg {
+    text-align: center;
+}
+.saltimg img {
+    width: 30%;
+}
+.title_text h4 {
+    text-align: center;
+    font-family:JosefinSans-Thin ;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.brand_heading{
+    text-align: center;
+}
+.brand_heading h2 {
+    color: #FFFFFF;
+    font-family:Philosopher-Regular ;
+    font-size: 40px;
+    font-weight: 200;
+}
+.brand_heading p,.loc_logo p {
+    font-family: Philosopher-Light;
+    font-weight: 500;
+    color: #fff;
+    font-size: 17px;
+}
+.boxes {
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px 200px 30px;
+
+   
+}
+.boxes .box{
+    padding: 50px 15px 50px 15px;
+    background-color: #FFFFFFE0;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
+    margin: 10px;
+    width: 20%;
+    height: 90px;
+    text-align: center;
+}
+.boxes .box img {
+    width: 250px;
+    /* padding: 30px; */
+}
+.location{
+    padding: 50px;
+    background-color: #222222;
+    border-top: 2px solid #ed1c24;
+
+}
+.location-box {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    background-color: #222222;
+}
+.loc {
+    margin: 10px;
+    width: 20%;
+}
+.loc {
+    width: 30%;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid;
+    height: 100px;
+    border: 2px solid #fff;
+}
+.bg {
+    height: 290px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    background-position: center,center;
+}
+.bg1{
+    background-image: url(assests/img/isb.png);
+}
+.bg2{
+    background-image: url(assests/img/faislabad.png);
+}
+.bg3{
+    background-image: url(assests/img/bhawlpur.png);
+}
+.bg4{
+    background-image: url(assests/img/n2.png);
+}
+.bg5{
+    background-image: url(assests/img/n1.png);
+}
+.bg6{
+    background-image: url(assests/img/n3.png);
+}
+.icon{
+    margin-top: 80px;
+}
+.icon i {
+    color: #ED1C24;
+    font-size: 35px;
+    transition: .5s ease-in-out;
+    
+}
+.icon i:hover,.follow_us i:hover{
+    transition: .5s ease-in-out;
+    transform: scale(1.1);
+}
+.loc_title h2{
+    font-family:GildaDisplay-Regular ;
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 18px;
+
+}
+.loc_logo{
+    text-align: center;
+}
+.loc_logo hr {
+    width: 15%;
+    margin: 21px auto;
+    border: 1px solid #fff;
+}
+.loc_logo h2{
+    font-size: 50px;
+    font-weight: 500;
+    font-family:Philosopher-Regular ;
+    color: #ed1c24;
+}
+.loc_logo img {
+    width: 400px;
+}
+.loc_title p{
+    color: #FFFFFF;
+    font-family:Dosis-Medium ;
+    font-weight: 500;
+    
+}
+.loc_title a{
+    text-decoration: none;
+    color: #fff;
+    font-family:Dosis-Medium ;
+    font-weight: bold;
+}
+.city_img img {
+    width: 270px;
+    margin-bottom: 30px;
+}
+.city_img{
+    text-align: center;
+}
+.another{
+    border-top: 2px solid #818181;
+}
+.icon2{
+    margin-top: 53px;
+}
+.loc_logo p {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Dosis-Light;
+    color: #fff;
+}
+.cs .bg {
+    background: #fff;
+    height: 200px;
+    width: 40%;
+    margin: 10px;
+}
+
+.cs .icon i{
+    font-size: 50px;
+}
+.cs .loc_title p {
+    color: #222222;
+    font-family: GildaDisplay-Regular;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.box{
+    overflow: hidden;
+}
+.box img{
+    transition: .5s ease-in-out;
+}
+.box img:hover{
+    transition: .5s ease-in-out;
+    transform: scale(1.1);
+}
+.bc .bg {
+    background: #fff;
+    height: 200px;
+    width: 50%;
+}
+.mine .bg{
+    border: 3px solid #ed1c24;
+}
+.vc .bg{
+    width: 45%;
+}
+.margin{
+    margin-top: 80px;
+}
+section.footer {
+    display: flex;
+    padding: 50px 35px;
+}
+.intro {
+    width: 30%;
+    margin-right: 25px;
+}
+.links, .cont_links {
+    width: 28%;
+}
+.follow_us{
+    width: 14%;
+}
+.footer{
+    font-family:Dosis-Medium ;
+    color: #E1E1E1;
+    border-top: 2px solid #ed1c24;
+    background-color: #222222;
+
+}
+.footer ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.footer ul li a{
+    color: #fff;
+    text-decoration: none;
+   
+}
+.footer ul li a:hover{
+    color: #ED1C24;
+}
+.footer h4{
+    font-size: 21px;
+    font-weight: 600;
+    font-family:Philosopher-Regular ;
+}
+.footer p {
+    text-align: justify;
+    line-height: 25px;
+}
+.footer span i {
+    margin-right: 10px;
+    color: #ed1c24;
+}
+.footer hr {
+    width: 45%;
+    border: 1px solid #ed1c24;
+    margin-bottom: 17px;
+    margin-top: 6px;
+}
+.follow_us{
+    margin-right: 75px;
+}
+.follow_us  ul {
+    display: flex;
+}
+
+.follow_us ul i{
+    color:#fff;    
+    width: 30px;
+    height: 30px;
+    border-radius: 60%;
+    background: red;
+    text-align: center;
+    line-height: 30px;
+}
+.imges img {
+    width: 75%;
+    margin-bottom: -15px;
+}
+.footer_copyright{
+    background-color: #222222;
+    border-top: 1px solid #818181;
+}
+.footer_copyright ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_copyright ul li{
+    list-style: none;
+    padding: 10px;
+
+}
+.footer_copyright ul li:nth-child(1){
+    border-right: 1px solid gray;
+}
+.footer_copyright ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family:Dosis-Medium ;
+    font-size: 15px;
+
+}
+.footer_copyright i{
+    margin-right: 10px;
+    color: #e62e2d;
+    font-size: 12px;
+}
+.order_button:hover{
+    transition: .3s ease-in-out;
+    transform: translateY(-12px);
+}
+.order_button {
+    transition: .3s ease-in-out;
+}

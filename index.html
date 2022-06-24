@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignments</title>
+    <link rel="icon" type="image/x-icon" href="assests/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="mob_nav">
+        <div class="heading">
+            <h2>JavaScript Assignments</h2>
+        </div>
+        <div class="navcustom">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop"><i class="fa-solid fa-bars-staggered"></i></button>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasTopLabel">Chapters</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="lists">
+                        <div class="listchapter">
+                            <ul>
+                                <li><a href="#c1">Chapter 1</a></li>
+                                <li><a href="#c2">Chapter 2</a></li>
+                                <li><a href="#c3">Chapter 3</a></li>
+                                <li><a href="#c4">Chapter 4</a></li>
+                                <li><a href="#c6">Chapter 6-9</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="listchapter">
+                            <ul>
+
+                                <li><a href="#c9">Chapter 9-11</a></li>
+                                <li><a href="#c12">Chapter 12-13</a></li>
+                                <li><a href="#c14">Chapter 14-16</a></li>
+                                <li><a href="#c14">Chapter 17-20</a></li>
+                                <li><a href="#c14">Chapter 21-25</a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="chapters">
+        <div class="button">
+            <a href="#c1" class="custom-btn btn-3"><span> 1</span></a>
+        </div>
+
+        <div class="button">
+            <a href="#c2" class="custom-btn btn-3"><span> 2</span></a>
+        </div>
+
+        <div class="button">
+            <a href="#c3" class="custom-btn btn-3"><span> 3</span></a>
+        </div>
+
+        <div class="button">
+            <a href="#c4" class="custom-btn btn-3"><span> 4</span></a>
+        </div>
+
+        <div class="button">
+            <a href="#c5" class="custom-btn btn-3"><span> 5</span></a>
+        </div>
+
+        <div class="button">
+            <a href="#c6" class="custom-btn btn-3"><span>6-9</span></a>
+        </div>
+
+        <div class="button">
+            <a href="#c9" class="custom-btn btn-3"><span>9-11</span></a>
+        </div>
+
+        <div class="button">
+            <a href="#c12" class="custom-btn btn-3"><span>12-13</span></a>
+        </div>
+        <div class="button">
+            <a href="#c14" class="custom-btn btn-3"><span>14-16</span></a>
+        </div>
+        <div class="button">
+            <a href="#c17" class="custom-btn btn-3"><span>17-20</span></a>
+        </div>
+        <div class="button">
+            <a href="#c18" class="custom-btn btn-3"><span>21-25</span></a>
+        </div>
+
+
+
+    </div>
+
+    <div class="questions">
+
+        <div class="github">
+            <a href="https://github.com/sadiqshah786/JavaScript_assignments" target="_blank"><i
+                    class="fa-solid fa-download"></i></a>
+        </div>
+        <div class="chapter_text">
+            <h2>Chapter 1 : Alert</h2>
+        </div>
+
+        <div class="question_wrapper" id="c1">
+            <div class="question">
+                <p>Write a script to greet your website visitor using JS alert box.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="task1();" class="custom-btn btn-3"><span>Task 1</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a script to display following message on your web page:</p>
+            </div>
+
+            <div class="button">
+                <button onclick="task2();" class="custom-btn btn-3"><span>Task 2</span></button>
+            </div>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a script to display following message on your web page: (Hint : Use line break)</p>
+            </div>
+
+            <div class="button">
+                <button onclick="task3();" class="custom-btn btn-3"><span>Task 3</span></button>
+            </div>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a script to display following messages in sequence:</p>
+            </div>
+
+            <div class="button">
+                <button onclick="task4();" class="custom-btn btn-3"><span>Task 4</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Generate the following message through browser’s developer console:</p>
+            </div>
+
+            <div class="button">
+                <button class="custom-btn btn-3">
+                    <span><a href="assests/img/task5.png" target="_blank">Task 5</a></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Make use of alerts in your new/existing HTML & CSS project.</p>
+                <p>
+                    Practice placement of
+                    script element in following sections of your project in exercise 6:
+                    <br>
+                    a. Head
+                    <br>
+                    b. Body (before your page’s HTML)
+                    <br>
+                    c. Body (inside your page’s HTML)
+                    <br>
+                    d. Body (after your page’s HTML)
+                </p>
+
+            </div>
+
+            <div class="button">
+                <button class="custom-btn btn-3">
+                    <span><a href="salt-peper-website/index.html" target="_blank">Task 6,7</a></span>
+                </button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="questions" id="c2">
+
+
+        <div class="chapter_text">
+            <h2>Chapter 2 : VARIABLES FOR STRINGS</h2>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare a variable called username.</p>
+            </div>
+
+            <div class="button">
+                <button class="custom-btn btn-3">
+                    <span><a href="assests/img/q1.png" target="_blank">Task 1</a></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare a variable called myName & assign to it a string that represents your Full Name.</p>
+            </div>
+
+            <div class="button">
+                <button class="custom-btn btn-3">
+                    <span><a href="assests/img/q2.png" target="_blank">Task 2</a></span>
+                </button>
+            </div>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write script to<br>
+                    a) Declare a JS variable, titled message.<br>
+                    b) Assign “Hello World” to variable message<br>
+                    c) Display the message in alert box.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="task23();" class="custom-btn btn-3"><span>Task 3</span></button>
+            </div>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a script to save student’s bio data in JS variables and show the data in alert boxes.:</p>
+            </div>
+
+            <div class="button">
+                <button onclick="StdData();" class="custom-btn btn-3"><span>Task 4</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a script to display the following alert using one JS variable:</p>
+            </div>
+
+            <div class="button">
+                <button onclick="pizza();" class="custom-btn btn-3"><span>Task 5</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare a variable called email and assign to it a string that represents your Email Address(e.g.
+                    example@example.com). Show the blow mentioned message in an alert box.(Hint: use string
+                    concatenation)</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="Email();" class="custom-btn btn-3"><span>Task 6</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare a variable called book & give it the value “A smarter way to learn JavaScript”. Display the
+                    following message in an alert box:</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="book();" class="custom-btn btn-3"><span>Task 7</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a script to display this in browser through JS</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="Content();" class="custom-btn btn-3"><span>Task 8</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Store following string in a variable and show in alert and browser through JS</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="PatternDesign();" class="custom-btn btn-3"><span>Task 9</span></button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="questions" id="c3">
+
+
+        <div class="chapter_text">
+            <h2>Chapter 3 : VARIABLES FOR Numbers</h2>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare a variable called age & assign to it your age. Show
+                    your age in an alert box.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="age();" class="custom-btn btn-3">
+                    <span>Task 1</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare & initialize a variable to keep track of how many
+                    times a visitor has visited a web page. Show his/her
+                    number of visits on your web page. For example: “You
+                    have visited this site N times”.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="visitors();" class="custom-btn btn-3">
+                    <span>Task 2</span>
+                </button>
+            </div>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare a variable called birthYear & assign to it your
+                    birth year. Show the following message in your browser:</p>
+            </div>
+
+            <div class="button">
+                <button onclick="birthYear();" class="custom-btn btn-3"><span>Task 3</span></button>
+            </div>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>A visitor visits an online clothing store
+                    www.xyzClothing.com . Write a script to store in variables
+                    the following information:<br>
+                    a. Visitor’s name<br>
+                    b. Product title<br>
+                    c. Quantity i.e.
+                    <br> how many products a visitor wants to
+                    order Show the following message in your browser: “John
+                    Doe ordered 5 T-shirt(s) on XYZ Clothing store”.
+                </p>
+            </div>
+
+            <div class="button">
+                <button onclick="order();" class="custom-btn btn-3"><span>Task 4</span></button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="questions" id="c4">
+
+
+        <div class="chapter_text">
+            <h2>Chapter 4 : VARIABLE NAMES: LEGAL & ILLEGAL</h2>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare 3 variables in one statement.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="multipleVariables();" class="custom-btn btn-3">
+                    <span><a href="assests/img/4-1.png" target="_blank">Task 1</a></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare 5 legal & 5 illegal variable names.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="varibaleDeclaration();" class="custom-btn btn-3">
+                    <span><a href="assests/img/4-2.png" target="_blank">Task 2</a></span>
+                </button>
+            </div>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Display this in your browser<br>
+                    a) A heading stating “Rules for naming JS variables”<br>
+                    b) Variable names can only contain ______, ______,
+                    ______ and ______.<br>
+                    For example $my_1stVariable<br>
+                    c) Variables must begin with a ______, ______ or
+                    _____. <br>For example $name, _name or name<br>
+                    d) Variable names are case _________<br>
+                    e) Variable names should not be JS _________</p>
+            </div>
+
+            <div class="button">
+                <button onclick="filleInTheBlanks();" class="custom-btn btn-3"><span>Task 3</span></button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="questions" id="c5">
+
+
+        <div class="chapter_text">
+            <h2>Chapter 5 : MATH EXPRESSIONS</h2>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that take two numbers & add them in a
+                    new variable. Show the result in your browser.</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="AddTwoNumbers();" class="custom-btn btn-3"><span>Task 1</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Repeat task1 for subtraction, multiplication, division &
+                    modulus.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="Operators();" class="custom-btn btn-3"><span>Task 2</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Do the following using JS Mathematic Expressions<br>
+                    a. Declare a variable.<br>
+                    b. Show the value of variable in your browser like “Value
+                    after variable declaration is: ??”.<br>
+                    c. Initialize the variable with some number.<br>
+                    d. Show the value of variable in your browser like “Initial
+                    value: 5”.<br>
+                    e. Increment the variable.<br>
+                    f. Show the value of variable in your browser like “Value
+                    after increment is: 6”.<br>
+                    g. Add 7 to the variable.<br>
+                    h. Show the value of variable in your browser like “Value
+                    after addition is: 13”.<br>
+                    i. Decrement the variable.<br>
+                    j. Show the value of variable in your browser like “Value
+                    after decrement is: 12”.<br>
+                    k. Show the remainder after dividing the variable’s value
+                    by 3.<br>
+                    l. Output : “The remainder is : 0”.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="varibaleDeclaration();" class="custom-btn btn-3"><span>Task 3</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p> Cost of one movie ticket is 600 PKR. Write a script to
+                    store
+                    ticket price in a variable & calculate the cost of buying 5
+                    tickets
+                    to a movie. Example output:</p>
+            </div>
+
+            <div class="button">
+                <button onclick="ticketCalculation();" class="custom-btn btn-3"><span>Task 4</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a script to display multiplication table of any
+                    number in your browser. E.g</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="table();" class="custom-btn btn-3"><span>Task 5</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>The Temperature Converter: It’s hot out! Let’s make a
+                    converter based on the steps here.<br>
+                    a. Store a Celsius temperature into a variable.<br>
+                    b. Convert it to Fahrenheit & output “NNoC is NNoF”.<br>
+                    c. Now store a Fahrenheit temperature into a variable.<br>
+                    d. Convert it to Celsius & output “NNoF is NNoC”.</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="tempratureConversion();" class="custom-btn btn-3"><span>Task 6</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to implement checkout process of a
+                    shopping cart system for an e-commerce website. Store
+                    the following in variables<br>
+                    a. Price of item 1<br>
+                    b. Price of item 2<br>
+                    c. Ordered quantity of item 1<br>
+                    d. Ordered Quantity of item 2<br>
+                    e. Shipping charges<br>
+
+                    Compute the total cost & show the receipt in your browser.</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="checkoutBillingInfo();" class="custom-btn btn-3"><span>Task 7</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Store total marks & marks obtained by a student in 2
+                    variables. Compute the percentage & show the result in
+                    your browser</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="marksheet();" class="custom-btn btn-3"><span>Task 8</span></button>
+            </div>
+        </div>
+
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Assume we have 10 US dollars & 25 Saudi Riyals. Write a
+                    script to convert the total currency to Pakistani Rupees.
+                    Perform all calculations in a single expression.
+                    (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee
+                    and 1 Saudi Riyal = 28 Pakistani Rupee)</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="currenciesConversion();" class="custom-btn btn-3"><span>Task 9</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to initialize a variable with some
+                    number and do arithmetic in following sequence:<br>
+                    a. Add 5<br>
+                    b. Multiply by 10<br>
+                    c. Divide the result by 2<br>
+                    Perform all calculations in a single expression</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="SignleExpression();" class="custom-btn btn-3"><span>Task 10</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>The Age Calculator: Forgot how old someone is?
+                    Calculate it!<br>
+                    a. Store the current year in a variable.<br>
+                    b. Store their birth year in a variable.<br>
+                    c. Calculate their 2 possible ages based on the stored
+                    values.</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="yearCalculation();" class="custom-btn btn-3"><span>Task 11</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>The Geometrizer: Calculate properties of a circle.<br>
+                    a. Store a radius into a variable.<br>
+                    b. Calculate the circumference based on the radius, and
+                    output “The circumference is NN”.<br>
+                    (Hint : Circumference of a circle = 2 π r , π = 3.142)
+                    Calculate the area based on the radius, and output “The
+                    area is NN”. (Hint : Area of a circle = π r2, π = 3.142)</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="circumferenceAndArea();" class="custom-btn btn-3"><span>Task 12</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>The Lifetime Supply Calculator: Ever wonder how
+                    much a “lifetime supply” of your favorite snack is?
+                    Wonder no more.<br>
+                    a. Store your favorite snack into a variable<br>
+                    b. Store your current age into a variable.<br>
+                    c. Store a maximum age into a variable.<br>
+                    d. Store an estimated amount per day (as a number).<br>
+                    e. Calculate how many would you eat total for the rest of
+                    your life.<br>
+                    Output the result to the screen like so: “You will need
+                    NNNN to last you until the ripe old age of NN”.</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="lifetimeStudy();" class="custom-btn btn-3"><span>Task 13</span></button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="questions" id="c6">
+
+
+        <div class="chapter_text">
+            <h2>Chapter 6 - 9 : MATH EXPRESSIONS</h2>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to take a number in a variable, do the
+                    required arithmetic to display the following result in your
+                    browser:</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="arithemticOperator();" class="custom-btn btn-3"><span>Task 1</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>What will be the output in variables a, b & result after
+                    execution of the following script:<br>
+                    var a = 2, b = 1;<br>
+                    var result = --a - --b + ++b + b--;<br>
+                    Explain the output at each stage:<br>
+                    --a;<br>
+                    --a - --b;<br>
+                    --a - --b + ++b;<br>
+                    --a - --b + ++b + b--;</p>
+            </div>
+
+            <div class="button">
+                <button onclick="expression();" class="custom-btn btn-3"><span>Task 2</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that takes input a name from user &
+                    greet the user.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="greetUser();" class="custom-btn btn-3"><span>Task 3</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p> Write a program to take input a number from user &
+                    display it’s multiplication table on your browser. If user
+                    does not enter a new number, multiplication table of 5
+                    should be displayed by default.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="tablePrint();" class="custom-btn btn-3"><span>Task 4</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Take<br>
+                    a) Take three subjects name from user and store them in 3
+                    different variables.<br>
+                    b) Total marks for each subject is 100, store it in another
+                    variable.<br>
+                    c) Take obtained marks for first subject from user and
+                    stored it in different variable.<br>
+                    d) Take obtained marks for remaining 2 subjects from user
+                    and store them in variables.<br>
+                    e) Now calculate total marks and percentage and show the
+                    result in browser like this.(Hint: user table)</p>
+
+            </div>
+
+            <div class="button">
+
+                <button onclick="result();" class="custom-btn btn-3"><span>Task 5</span></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="questions" id="c9">
+
+
+        <div class="chapter_text">
+            <h2>Chapter 9 - 11 : MATH EXPRESSIONS</h2>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to take “city” name as input from user. If user enters “Karachi”, welcome the user
+                    like this: “Welcome to city of lights”</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="wlecomeMessage();" class="custom-btn btn-3"><span>Task 1</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to take “gender” as input from user. If the user is male, give the message: Good
+                    Morning Sir. If the user is female, give the message: Good Morning Ma’am.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="genderMessage();" class="custom-btn btn-3"><span>Task 2</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to take input color of road traffic signal from the user & show the message according
+                    to this table:</p>
+            </div>
+
+            <div class="button">
+                <button onclick="trafficLight();" class="custom-btn btn-3"><span>Task 3</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to take input remaining fuel in car (in litres) from user. If the current fuel is
+                    less than 0.25litres, show the message “Please refill the fuel in your car”</p>
+            </div>
+
+            <div class="button">
+                <button onclick="fuelMessage();" class="custom-btn btn-3"><span>Task 4</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question code">
+                <p>Run this script, & check whether alert message would be
+                    displayed or not. Record the outputs.
+                    <br>
+                    <code>
+                    var a = 4;  <br>
+                    if (++a === 5){
+                        <br> alert("given condition for variable a is true"); <br>
+                    }
+                    <br>
+                  
+                    var b = 82; <br>
+                    if (b++ === 83){ 
+                        <br> alert("given condition for variable b is true"); <br>
+                    }
+                    <br>
+                     var c = 12;<br>
+                    if (c++ === 13){ <br>
+                    alert("condition 1 is true"); <br>
+                    }
+                    <br>
+
+                    if (c === 13){<br>
+                        alert("condition 2 is true");<br>
+                    }
+                    <br>
+                    if (++c < 14){<br>
+                    alert("condition 3 is true");<br>
+                    }
+                    <br>
+                    if(c === 14){<br>
+                    alert("condition 4 is true");<br>
+                    }<br>
+                    var materialCost = 20000;<br>
+                    var laborCost = 2000;<br>
+                    var totalCost = materialCost + laborCost;<br>
+                    if (totalCost === laborCost + materialCost){<br>
+                        alert("The cost equals");<br>
+                    }<br>
+                    if (true){<br>
+                    alert("True");<br>
+                    }<br>
+                    if (false){<br>
+                    alert("False");<br>
+                    }<br>
+                   if("car" < "cat"){<br>
+                    alert("car is smaller than cat");<br>
+                    }
+                </code>
+                </p>
+            </div>
+
+            <div class="button">
+
+                <button onclick="runScript();" class="custom-btn btn-3"><span>Task 5</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to take input the marks obtained in three subjects & total marks. Compute & show the
+                    resulting percentage on your page. Take percentage & compute grade as per following table:</p>
+            </div>
+
+            <div class="button">
+                <button onclick="MarksheetGrade();" class="custom-btn btn-3"><span>Task 6</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>
+                <h2>Guess game:</h2><br>
+                Store a secret number (ranging from 1 to 10) in a variable. Prompt user to guess the secret number.
+                a. If user guesses the same number, show “Bingo! Correct answer”. <br>
+                b. If the guessed number +1 is the<br>
+                secret number, show “Close enough to the correct answer”.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="guessGame();" class="custom-btn btn-3"><span>Task 7</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to check whether the given number is divisible by 3. Show the message to the user if
+                    the number is divisible by 3.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="divisibleBy3();" class="custom-btn btn-3"><span>Task 8</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that checks whether the given input is an even number or an odd number.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="evenOdd();" class="custom-btn btn-3"><span>Task 9</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that takes temperature as input and shows a message based on following criteria <br>
+                    a. T > 40 then “It is too hot outside.” <br>
+                    b. T > 30 then “The Weather today is Normal.” <br>
+                    c. T > 20 then “Today’s Weather is cool.”<br>
+                    d. T > 10 then “OMG! Today’s weather is so Cool.”.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="Temp();" class="custom-btn btn-3"><span>Task 9</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to create a calculator for +,-,*, / & % using if statements. <br>
+                    Take the following input: <br> a. First number <br> b. Second number <br> c. Operation (+, -, *, /,
+                    %) <br> Compute & show the calculated
+                    result to user.</p>
+            </div>
+
+            <div class="button">
+                <button onclick="calculator();" class="custom-btn btn-3"><span>Task 9</span></button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="questions" id="c12">
+
+
+        <div class="chapter_text">
+            <h2>Chapter 12 - 13 : IF...ELSE & ELSE IF STATEMENT,
+                TESTING SET OF CONDITIONS</h2>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that takes a character (number or string)
+                    in a variable & checks whether the given input is a
+                    number, uppercase letter or lower case letter. (Hint: ASCII
+                    codes:- A=65, Z=90, a=97, z=122).</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="ASCIIcode();" class="custom-btn btn-3"><span>Task 1</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a JavaScript program that accept two integers and display the larger. Also show if the two
+                    integers are equal.</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="findLarger();" class="custom-btn btn-3"><span>Task 2</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that takes input a number from user & state whether the number is positive, negative
+                    or zero.</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="numberFinder();" class="custom-btn btn-3"><span>Task 3</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that takes a character (i.e. string of length 1) and returns true if it is a vowel,
+                    false otherwise</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="vowelsFinder();" class="custom-btn btn-3"><span>Task 4</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that <br>
+                    a. Store correct password in a JS variable.<br>
+                    b. Asks user to enter his/her password<br>
+                    c. Validate the two passwords:<br>
+                    i. Check if user has entered password. If not, then give message “ Please enter your password”<br>
+                    ii. Check if both passwords are same. If they are same, show message “Correct! The password you<br>
+                    entered matches the original password”. Show “Incorrect password” otherwise.</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="passwordChecker();" class="custom-btn btn-3"><span>Task 5</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>This if/else statement does not work.
+                    Try to fix it:
+                    <code>
+                        <br>var greeting;<br>
+                        var hour = 13; <br>
+                        if (hour < 18) <br>
+                        {<br>
+                            greeting="Good day" ;<br>
+                        }<br>
+                        else greeting="Good evening" ;<br>
+                    }
+                    </code>
+                </p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="ScriptCorrection();" class="custom-btn btn-3"><span>Task 6</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm.
+                    Implement the following case using if, else & else if statements</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="timeFind();" class="custom-btn btn-3"><span>Task 7</span></button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="questions" id="c14">
+
+
+        <div class="chapter_text">
+            <h2>Chapter 14 - 16 : ARRAYS</h2>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare an empty array using JS literal notation to store
+                    student names in future</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="literalArray();" class="custom-btn btn-3"><span>Task 1</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare an empty array using JS object notation to store
+                    student names in future.
+                </p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="objectArray();" class="custom-btn btn-3"><span>Task 2</span></button>
+            </div>
+        </div>
+
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare and initialize a strings array.</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="stringsArray();" class="custom-btn btn-3">
+                    <span><a href="assests/img/array.PNG" target="_blank">Task 3</a></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare and initialize a Number array.</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="NumberArray();" class="custom-btn btn-3">
+                    <span><a href="assests/img/number.PNG" target="_blank">Task 4</a></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare and initialize a boolean array.</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="booleanArray();" class="custom-btn btn-3">
+                    <span><a href="assests/img/booleam.PNG" target="_blank">Task 5</a></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare and initialize a mixed array. </p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="mixArray();" class="custom-btn btn-3">
+                    <span><a href="assests/img/mix.PNG" target="_blank">Task 6</a></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare and Initialize an array and store available
+                    education qualifications in Pakistan (e.g. SSC, HSC, BCS,
+                    BS, BCOM, MS, M. Phil., PhD). Show the listed
+                    qualifications in your browser like </p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="educationQualification();" class="custom-btn btn-3"><span>Task 7</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to store 3 student names in an array.Take
+                    another array to store score of these three students.
+                    Assume that total marks are 500 for each student, display
+                    the scores & percentages of students like:</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="marksheet();" class="custom-btn btn-3"><span>Task 8</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Initialize an array with color names. Display the array
+                    elements in your browser.</p>
+            </div>
+            <div class="button">
+                <button onclick="Initialize();" class="custom-btn btn-3"><span>Task 9</span></button>
+            </div>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>a. Ask the user what color he/she wants to add to the
+                    beginning & add that color to the beginning of the array.
+                    Display the updated array in your browser.</p>
+            </div>
+            <div class="button">
+                <button onclick="addcolorStart();" class="custom-btn btn-3"><span>Task 9a</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>b. Ask the user what color he/she wants to add to the end
+                    & add that color to the end of the array. Display the
+                    updated array in your browser.</p>
+            </div>
+            <div class="button">
+                <button onclick="endcolorStart();" class="custom-btn btn-3"><span>Task 9b</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>c. Add two more color to the beginning of the array.
+                    Display the updated array in your browser.</p>
+            </div>
+            <div class="button">
+                <button onclick="addMoreColorStart();" class="custom-btn btn-3"><span>Task 9c</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>d. Delete the first color in the array. Display the updated
+                    array in your browser.</p>
+            </div>
+            <div class="button">
+                <button onclick="deleteColorStart();" class="custom-btn btn-3"><span>Task 9d</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>e. Delete the last color in the array. Display the updated
+                    array in your browser.</p>
+            </div>
+            <div class="button">
+                <button onclick="deleteLastColor();" class="custom-btn btn-3"><span>Task 9e</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>f. Ask the user at which index he/she wants to add a color
+                    & color name. Then add the color to desired
+                    position/index. . Display the updated array in your
+                    browser.</p>
+            </div>
+            <div class="button">
+                <button onclick="specificIndex();" class="custom-btn btn-3"><span>Task 9f</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>g. Ask the user at which index he/she wants to delete
+                    color(s) & how many colors he/she wants to delete. Then
+                    remove the same number of color(s) from user-defined
+                    position/index. . Display the updated array in your
+                    browser.
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="numberOfColorDelete();" class="custom-btn btn-3"><span>Task 9f</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to store student scores in an array &
+                    sort the array in ascending order using Array’s sort
+                    method.
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="arrayAscOrder();" class="custom-btn btn-3"><span>Task 10</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to initialize an array with city names.
+                    Copy 3 array elements from cities array to selectedCities
+                    array.
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="CopyArray();" class="custom-btn btn-3"><span>Task 11</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to create a single string from the
+                    below mentioned array:
+                    var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+                    (Use array’s join method)
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="JoinArray();" class="custom-btn btn-3"><span>Task 12</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Create a new array. Store values one by one in such a way
+                    that you can access the values in the order in which they
+                    were stored. (FIFO-First In First Out)
+
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="FIFO();" class="custom-btn btn-3"><span>Task 13</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Create a new array. Store values one by one in such a way
+                    that you can access the values in reverse order. (Last In First Out
+
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="LIFO();" class="custom-btn btn-3"><span>Task 14</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to store phone manufacturers (Apple,
+                    Samsung, Motorola, Nokia, Sony & Haier) in an array.
+                    Display the following dropdown/select menu in your
+                    browser using document.write() method.
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="dropdown();" class="custom-btn btn-3"><span>Task 14</span></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="questions" id="c17">
+
+
+        <div class="chapter_text" id="#c7">
+            <h2>Chapter 17 - 20 : ARRAYS AND LOOP</h2>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare and initialize an empty multidimensional array.
+                    (Array of arrays)</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="multidimentions();" class="custom-btn btn-3"><span>Task 1</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Declare and initialize a multidimensional array
+                    representing the following matrix:
+                </p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="multidimensionalArray();" class="custom-btn btn-3"><span>Task 2</span></button>
+            </div>
+        </div>
+
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to print numeric counting from 1 to 10..</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="counting();" class="custom-btn btn-3">
+                    <span>Task 3</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to print multiplication table of any
+                    number using for loop. Table number & length should be
+                    taken as an input from user.</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="tablePrint();" class="custom-btn btn-3">
+                    <span>Task 4</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to print items of the following array
+                    using for loop:
+                    fruits = [“apple”, “banana”, “mango”, “orange”,
+                    “strawberry”]</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="fruitsList();" class="custom-btn btn-3">
+                    <span>Task 5</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Generate the following series in your browser. See example output.<br>
+                    a. Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15</p>
+            </div>
+            <div class="button">
+                <button onclick="listMethoda();" class="custom-btn btn-3"><span>Task 6a</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>b. Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1</p>
+            </div>
+            <div class="button">
+                <button onclick="listMethodb();" class="custom-btn btn-3"><span>Task 6b</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>c. Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20</p>
+            </div>
+            <div class="button">
+                <button onclick="listMethodc();" class="custom-btn btn-3"><span>Task 6c</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>d. Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19</p>
+            </div>
+            <div class="button">
+                <button onclick="listMethodd();" class="custom-btn btn-3"><span>Task 6d</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k</p>
+            </div>
+            <div class="button">
+                <button onclick="listMethode();" class="custom-btn btn-3"><span>Task 6e</span></button>
+            </div>
+        </div>
+
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>You have an array<br>
+                    A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”]<br>
+                    Write a program to enable “search by user input” in an
+                    array.<br>
+                    After searching, prompt the user whether the given item is
+                    found in the list or not. Example:
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="cookies();" class="custom-btn btn-3"><span>Task 7</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to identify the largest number in the
+                    given array.<br>
+                    A = [24, 53, 78, 91, 12]
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="largestNumber();" class="custom-btn btn-3"><span>Task 8</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to identify the small number in the
+                    given array.<br>
+                    A = [24, 53, 78, 91, 12]
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="SmallestNumber();" class="custom-btn btn-3"><span>Task 9</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to print multiples of 5 ranging 1 to
+                    100.
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="rangeNumber();" class="custom-btn btn-3"><span>Task 10</span></button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="questions" id="c18">
+
+
+        <div class="chapter_text" id="#c7">
+            <h2>Chapter 21 - 25 : STRING METHODS</h2>
+        </div>
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that takes two user inputs for first and
+                    last name using prompt and merge them in a new variable
+                    titled fullName. Greet the user using his full name.</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="con();" class="custom-btn btn-3"><span>Task 1</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to take a user input about his favorite
+                    mobile phone model. Find and display the length of user
+                    input in your browser
+                </p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="lengthFinder();" class="custom-btn btn-3"><span>Task 2</span></button>
+            </div>
+        </div>
+
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to find the index of letter “n” in the word
+                    “Pakistani” and display the result in your browser .</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="indexOfLetter();" class="custom-btn btn-3">
+                    <span>Task 3</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to find the last index of letter “l” in the
+                    word “Hello World” and display the result in your browser.</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="lastIndex();" class="custom-btn btn-3">
+                    <span>Task 4</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to find the character at 3rd index in the
+                    word “Pakistani” and display the result in your browser.</p>
+            </div>
+
+
+            <div class="button">
+                <button onclick="thridIndex();" class="custom-btn btn-3">
+                    <span>Task 5</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Repeat Q1 using string concat() method.</p>
+            </div>
+            <div class="button">
+                <button onclick="concatination();" class="custom-btn btn-3"><span>Task 6</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to replace the “Hyder” to “Islam” in the
+                    word “Hyderabad” and display the result in your browser.</p>
+            </div>
+            <div class="button">
+                <button onclick="replaceWord();" class="custom-btn btn-3"><span>Task 7</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>>Write a program to replace all occurrences of “and” in the
+                    string with “&” and display the result in your browser.
+                    var message = “Ali and Sami are best friends. They play cricket and
+                    football together.”;</p>
+            </div>
+            <div class="button">
+                <button onclick="messageReplace();" class="custom-btn btn-3"><span>Task 8</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that converts a string “472” to a number
+                    472. Display the values & types in your browser.</p>
+            </div>
+            <div class="button">
+                <button onclick="convertsString();" class="custom-btn btn-3"><span>Task 9</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that takes user input. Convert and
+                    show the input in capital letters.</p>
+            </div>
+            <div class="button">
+                <button onclick="UpperCaseLetter();" class="custom-btn btn-3"><span>Task 10</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that takes user input. Convert and
+                    show the input in title case.</p>
+            </div>
+            <div class="button">
+                <button onclick="titleCaseLetter();" class="custom-btn btn-3"><span>Task 11</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program that converts the variable num to
+                    string.</p>
+            </div>
+            <div class="button">
+                <button onclick="variableIntoNumbers();" class="custom-btn btn-3"><span>Task 12</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to take user input and store username
+                    in a variable. If the username contains any special symbol
+                    among [@ . , !], prompt the user to enter a valid username.
+                    For character codes of [@ .</p>
+            </div>
+            <div class="button">
+                <button onclick="InvalidPass();" class="custom-btn btn-3"><span>Task 13</span></button>
+            </div>
+        </div>
+
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>You have an array<br>
+                    A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”]<br>
+                    Write a program to enable “search by user input” in an
+                    array.<br>
+                    After searching, prompt the user whether the given item is
+                    found in the list or not. Example:<br>
+                    Note: Perform case insensitive search. Whether the user
+                    enters cookie, Cookie, COOKIE or coOkIE, program
+                    should inform about its availability. Example:
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="SnacksFinding();" class="custom-btn btn-3"><span>Task 14</span></button>
+            </div>
+        </div>
+
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to take password as an input from
+                    user. The password must qualify these requirements:<br>
+                    a. It should contain alphabets and numbers<br>
+                    b. It should not start with a number<br>
+                    c. It must at least 6 characters long<br>
+                    If the password does not meet above requirements,<br>
+                    prompt the user to enter a valid password.<br>
+                    For character codes of a-z, A-Z & 0-9, refer to ASCII<br>
+                    table at the end of this document.<br>
+                </p><br>
+            </div>
+            <div class="button">
+                <button onclick="userPassword();" class="custom-btn btn-3"><span>Task 15</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to convert the following string to an
+                    array using string split method.
+                    var university = “University of Karachi”;
+                    Display the elements of array in your browser.
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="splitString();" class="custom-btn btn-3"><span>Task 16</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>Write a program to display the last character of a user
+                    input.
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="lastChar();" class="custom-btn btn-3"><span>Task 17</span></button>
+            </div>
+        </div>
+
+        <div class="question_wrapper">
+            <div class="question">
+                <p>You have a string “The quick brown fox jumps over the
+                    lazy dog”. Write a program to count number of
+                    occurrences of word “the” in given string.
+                </p>
+            </div>
+            <div class="button">
+                <button onclick="countOccurrences();" class="custom-btn btn-3"><span>Task 18</span></button>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>

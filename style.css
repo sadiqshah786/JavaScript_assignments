@@ -1,0 +1,280 @@
+@font-face {
+    font-family:p-M ;
+    src: url(assests/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family:p-R ;
+    src: url(assests/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family:p-SB ;
+    src: url(assests/fonts/Poppins-SemiBold.ttf);
+}
+body{
+    font-family:p-R ; 
+
+}
+html {
+  scroll-behavior: smooth;
+}
+.mob_nav{
+  display: none;
+}
+
+.questions {
+  width: 80%;
+  margin: 30px auto;
+  padding: 40px 30px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.chapter_text {
+    text-align: center;
+}
+.chapters {
+    position: fixed;
+    left: 1%;
+    text-align: center;
+    overflow: scroll;
+    height: 600px;
+    padding: 15px;
+}
+/* width */
+
+
+.chapters::-webkit-scrollbar {
+  width: 5px;
+}
+.chapters::-webkit-scrollbar-thumb {
+  border-left: 0;
+  border-right: 0;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.chapters .button{
+  margin-bottom: 10px;
+}
+.chapters .button a {
+  width: 50px;
+  padding: 4px;
+  height: 50px;
+  border-radius: 60%;
+  display: flex;
+  align-items: center;
+  line-height: 43px;
+}
+.question_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 0px 30px;
+    border-radius: 5px;
+
+}
+.chapter_text h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-family:p-M ;
+
+  }
+  .btn-3 {
+    background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: rgba(2,126,251,1);
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+  .question {
+    width: 80%;
+    border-bottom: 1px solid #ddd;
+}
+.button a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+.button a:hover{
+    color: rgba(2,126,251,1);
+    
+}
+.github {
+    text-align: right;
+}
+.github i {
+    font-size: 26px;
+    color: #000;
+    margin-top: 20px;
+}
+
+.chapters .btn-3 span:before,
+.chapters .btn-3 span:after,  .btn-3:before,
+.btn-3:after {
+  position: unset;
+    content:unset;
+    right: unset;
+    top: unset;
+     background: unset;
+    transition: all 0.3s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+
+@media screen and (max-width:600px) {
+  dl, ol, ul{
+    padding: 0px;
+    margin: 0px;
+  }
+  .offcanvas-body {
+    padding: 25px 1rem;
+}
+  .listchapter ul li a {
+    color: #000;
+    text-decoration: blink;
+    display: block;
+    margin-bottom: 6px;
+}
+.offcanvas-header {
+  padding: 8px 8px;
+  background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  color: #fff;
+}
+.offcanvas-header .btn-close {
+  font-size: 12px;
+  margin-right: 10px;
+}
+  .btn-check:focus+.btn, .btn:focus{
+    box-shadow: none;
+  }
+  .mob_nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    text-align: center;
+    align-items: center;
+  }
+  .lists {
+    display: flex;
+}
+.listchapter ul li {
+  list-style: none;
+  text-align: left;
+}
+.listchapter {
+  width: 50%;
+}
+  .questions {
+    width: 100%;
+    padding: 30px 0px;
+}
+.chapter_text h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 36px;
+  margin-top: 20px;
+}
+.chapters{
+  display: none;
+}
+.chapters .button {
+  margin-bottom: -23px;
+}
+    .question_wrapper {
+      flex-direction: column;
+      padding:0px;
+  }
+  .button {
+    margin-top: 30px;
+}
+.github {
+  text-align: center;
+  padding: 15px;
+}
+.heading h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+    
+}
