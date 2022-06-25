@@ -1527,7 +1527,7 @@ function listMethodc() {
     for (i = 0; i <= 20; i++) {
 
         if (i % 2 == 0) {
-            document.write(i)
+            document.write(i + " ")
         }
     }
 }
@@ -1535,8 +1535,8 @@ function listMethodd() {
     document.write("<h1>ODD Number</h1>")
     for (i = 0; i <= 20; i++) {
 
-        if (i % 3 == 0) {
-            document.write(i)
+        if (i % 2 == 1) {
+            document.write(i + " ")
         }
     }
 }
