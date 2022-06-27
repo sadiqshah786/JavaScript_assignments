@@ -1048,10 +1048,10 @@ function findLarger() {
     if (UserNumber1 > UserNumber2) {
         alert(UserNumber1 + " is greater than " + UserNumber2)
     }
-    else if(UserNumber2>UserNumber1){
+    else if (UserNumber2 > UserNumber1) {
         alert(UserNumber2 + " is greater than " + UserNumber1)
     }
-    else if(UserNumber2===UserNumber1){
+    else if (UserNumber2 === UserNumber1) {
         alert(UserNumber2 + " is equal to  " + UserNumber1)
     }
     else {
@@ -1792,22 +1792,22 @@ function variableIntoNumbers() {
 
 function InvalidPass() {
 
-var userPass = prompt("Enter a name : ")
-var flag = false
-var splitPass = userPass.split('');
+    var userPass = prompt("Enter a name : ")
+    var flag = false
+    var splitPass = userPass.split('');
 
-for(i=0; i<splitPass.length; i++){
+    for (i = 0; i < splitPass.length; i++) {
 
-    if(  (splitPass[i]==="!") || ( splitPass[i]===",") || ( splitPass[i]===".")|| ( splitPass[i]==="@")  ){
+        if ((splitPass[i] === "!") || (splitPass[i] === ",") || (splitPass[i] === ".") || (splitPass[i] === "@")) {
 
-        flag = true;
-        alert("Please enter a valid username");
+            flag = true;
+            alert("Please enter a valid username");
+        }
     }
-}
-if(flag===false){
+    if (flag === false) {
 
-    alert("Valid password")
-}
+        alert("Valid password")
+    }
 
 
 
@@ -1831,7 +1831,7 @@ function SnacksFinding() {
 
 
 // // // Q15
-function userPassword (){
+function userPassword() {
     var pass = prompt("Enter your password");
     var a = [
         "A",
@@ -1890,50 +1890,50 @@ function userPassword (){
         "z",
     ];
     var c = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-    
+
     var isNumber = false;
     var isAlpha = false;
     var isInvalid = false;
-    
+
     if (c.indexOf(pass[0]) !== -1) {
         alert("Number is not allowed on index 0")
     }
     else if (pass.length < 6) {
         alert("Password should be at leasat 6")
     }
-    
-    else{
-    
-        for(i=0; i<pass.length; i++){
-    
-            if(a.indexOf(pass[i])!==-1){
-    
+
+    else {
+
+        for (i = 0; i < pass.length; i++) {
+
+            if (a.indexOf(pass[i]) !== -1) {
+
                 isAlpha = true;
             }
-            else if(b.indexOf(pass[i])!==-1){
-    
+            else if (b.indexOf(pass[i]) !== -1) {
+
                 isAlpha = true;
             }
-            else if(c.indexOf(pass[i])!==-1){
-    
+            else if (c.indexOf(pass[i]) !== -1) {
+
                 isNumber = true;
             }
-            else{
-    
+            else {
+
                 isInvalid = true;
-                
+
             }
         }
-        if(isNumber && isAlpha && !isInvalid){
-    
+        if (isNumber && isAlpha && !isInvalid) {
+
             alert("Correct !")
         }
-        else{
-        
+        else {
+
             alert("password not meet the requirement ")
         }
     }
-    
+
 
 }
 
@@ -1945,19 +1945,19 @@ function splitString() {
 
     var splitiedvalues = university.split('').join("<br>")
     document.write(splitiedvalues);
-    
+
     document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
-    
-    
+
+
 }
 
 // Q17
-function lastChar(){
+function lastChar() {
 
     var character = "Pakistan";
 
-    var LastChar = (character.length)-1;
+    var LastChar = (character.length) - 1;
 
     document.write(character[LastChar])
     document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
@@ -1966,32 +1966,119 @@ function lastChar(){
 
 // Q18
 
-function countOccurrences()
-    {
+function countOccurrences() {
     var n = "The quick brown fox jumps over the lazy dog.";
 
     var lowest = n.toLowerCase()
     var splitedvalue = lowest.split(" ");
     var coutString = 'the';
-  
-    var  count = 0;
-    for (var i = 0; i < splitedvalue.length; i++)
-    {
-    if (coutString==(splitedvalue[i]))
-        count++;
+
+    var count = 0;
+    for (var i = 0; i < splitedvalue.length; i++) {
+        if (coutString == (splitedvalue[i]))
+            count++;
     }
-  
+
     document.write("Text : " + n + "<br>")
     document.write("There are " + count + "occurrence(s) of the word 'the' ");
     document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
 
+}
+
+// Chapter 26-30 : Math Method
+
+// q1 
+
+function mathFunctions() {
+    var number = +prompt("Enter a positive integer : ")
+
+    document.write("Number:  " + number + "<br>");
+    document.write("round of value: " + Math.round(number) + "<br>");
+    document.write("floor value: " + Math.floor(number) + "<br>");
+    document.write("Ceil value: " + Math.ceil(number) + "<br>");
+
+}
+
+
+// q2 
+
+function mathFunctionsNegative() {
+    var number = +prompt("Enter a negative floating value : ")
+
+    document.write("Number:  " + number + "<br>");
+    document.write("round of value: " + Math.round(number) + "<br>");
+    document.write("floor value: " + Math.floor(number) + "<br>");
+    document.write("Ceil value: " + Math.ceil(number) + "<br>");
+
+}
+
+
+function absoluteValue() {
+
+    var number = prompt("Enter a number : ")
+    if (number < 0) {
+
+        var absNumber = number * -1;
+        document.write("The Absolute value of " + number + "is" + absNumber)
     }
-  
-     
+    else {
+        document.write("The Absolute value of " + number + " is " + number)
+    }
 
 
+}
 
+
+function rollDice() {
+    var randomvalues = + prompt("How many random value do you want to after roll the dice?")
+    for (i = 1; i < randomvalues; i++) {
+        var randomeNumber = Math.floor((Math.random() * 6)) + 1;
+        document.write("Randome dice value : " + randomeNumber + "<br>")
+    }
+}
+
+
+function headtail() {
+    for (i = 1; i < 5; i++) {
+    var HT = ["Heads","Tails"] 
+    var randomNumber = Math.floor(Math.random() * HT.length);
+    var word = HT[randomNumber];
+    document.write( randomNumber+1 + "<br>" + "Random coin value : " + word + "<br>")
+}
+}
+
+function randomNumber(){
+    for (i = 1; i < 5; i++) {
+    var randomNumber = Math.floor(Math.random() * 100);
+    document.write("Random number between 1 to 100 : " + randomNumber + "<br>")
+    }
+
+}
+
+function parseInteger(){
+
+    // var userInput = +prompt("Enter your weight :")
+
+    // document.write(userInput  + "<br>")
+    // document.write(userInput  + "Kgs" +  "<br>")
+    // document.write(userInput  + ".2Kgs"+ "<br>")
+    // document.write(userInput  + ".2Kgs"+ "<br>")
+    alert("working...")
+}
+
+
+function randomNumbers(){
+    var randomNumber = Math.floor(Math.random() * 10) + 1;
+    var userInput = +prompt("Enter a guess number : ")
+    if(userInput===randomNumber){
+        alert("you Win")
+    }
+    else{
+        alert("Try again !")
+    }
+
+}
 
 
 
