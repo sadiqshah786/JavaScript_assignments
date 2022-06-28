@@ -1997,6 +1997,8 @@ function mathFunctions() {
     document.write("round of value: " + Math.round(number) + "<br>");
     document.write("floor value: " + Math.floor(number) + "<br>");
     document.write("Ceil value: " + Math.ceil(number) + "<br>");
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
 
 }
 
@@ -2010,10 +2012,12 @@ function mathFunctionsNegative() {
     document.write("round of value: " + Math.round(number) + "<br>");
     document.write("floor value: " + Math.floor(number) + "<br>");
     document.write("Ceil value: " + Math.ceil(number) + "<br>");
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
 
 }
 
-
+// q3
 function absoluteValue() {
 
     var number = prompt("Enter a number : ")
@@ -2025,49 +2029,65 @@ function absoluteValue() {
     else {
         document.write("The Absolute value of " + number + " is " + number)
     }
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
 
 
 }
 
-
+// q4
 function rollDice() {
     var randomvalues = + prompt("How many random value do you want to after roll the dice?")
     for (i = 1; i < randomvalues; i++) {
         var randomeNumber = Math.floor((Math.random() * 6)) + 1;
         document.write("Randome dice value : " + randomeNumber + "<br>")
     }
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
 }
 
-
+// q5
 function headtail() {
     for (i = 1; i < 5; i++) {
     var HT = ["Heads","Tails"] 
     var randomNumber = Math.floor(Math.random() * HT.length);
     var word = HT[randomNumber];
     document.write( randomNumber+1 + "<br>" + "Random coin value : " + word + "<br>")
+
+    
 }
+document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
 }
 
+// q7
 function randomNumber(){
     for (i = 1; i < 5; i++) {
     var randomNumber = Math.floor(Math.random() * 100);
     document.write("Random number between 1 to 100 : " + randomNumber + "<br>")
     }
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
 }
-
+// q8
 function parseInteger(){
 
-    // var userInput = +prompt("Enter your weight :")
+    userInput = prompt("Enter your weight in kilogram");
 
-    // document.write(userInput  + "<br>")
-    // document.write(userInput  + "Kgs" +  "<br>")
-    // document.write(userInput  + ".2Kgs"+ "<br>")
-    // document.write(userInput  + ".2Kgs"+ "<br>")
-    alert("working...")
+    if(userInput.indexOf('.')){
+        
+        document.write("The Weight of user is : " + parseFloat(userInput) + " Kilogram")
+    }
+    else{
+        document.write("The Weight of user is : " + parseInt(userInput) + " Kilogram")
+
+    
+    }
+   document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+    
 }
 
-
+// q9
 function randomNumbers(){
     var randomNumber = Math.floor(Math.random() * 10) + 1;
     var userInput = +prompt("Enter a guess number : ")
@@ -2077,8 +2097,11 @@ function randomNumbers(){
     else{
         alert("Try again !")
     }
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
 }
+
+
 
 
 
