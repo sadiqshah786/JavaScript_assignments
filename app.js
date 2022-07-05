@@ -2268,9 +2268,10 @@ function yearCalculation() {
 
 function KEBill() {
     // // KE bill
+    var Month = ["Jan", "Feb", "Marach", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov"]
 
     var customerName = prompt("Enter your Name : ");
-    var currentMonth = prompt("Enter your current Month: ");
+    var currentMonth = new Date().getMonth();
     var numberOfUnit = +prompt("Enter number of Units :");
     var ChargesOfUnit = +prompt("Enter Charges per unit :");
     var LatePaymentSurcharge = +prompt("Enter Late Payment Surcharge :");
@@ -2284,7 +2285,7 @@ function KEBill() {
 
     document.write(`<h1>K-Electric Bill <br> </h1>`)
     document.write(`<p>Customer Name: <b>${customerName}</b> <br> </p>`)
-    document.write(`<p>Month: <b>${currentMonth}</b> <br></p>`)
+    document.write(`<p>Month: <b>${Month[currentMonth]}</b> <br></p>`)
     document.write(`<p> Number of Units: <b>${numberOfUnit} </b><br></p>`)
     document.write(`<p>Charges per unit: <b>${ChargesOfUnit}</b> <br> </p>`)
 
