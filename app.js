@@ -2049,67 +2049,250 @@ function rollDice() {
 // q5
 function headtail() {
     for (i = 1; i < 5; i++) {
-    var HT = ["Heads","Tails"] 
-    var randomNumber = Math.floor(Math.random() * HT.length);
-    var word = HT[randomNumber];
-    document.write( randomNumber+1 + "<br>" + "Random coin value : " + word + "<br>")
+        var HT = ["Heads", "Tails"]
+        var randomNumber = Math.floor(Math.random() * HT.length);
+        var word = HT[randomNumber];
+        document.write(randomNumber + 1 + "<br>" + "Random coin value : " + word + "<br>")
 
-    
-}
-document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+    }
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
 }
 
 // q7
-function randomNumber(){
+function randomNumber() {
     for (i = 1; i < 5; i++) {
-    var randomNumber = Math.floor(Math.random() * 100);
-    document.write("Random number between 1 to 100 : " + randomNumber + "<br>")
+        var randomNumber = Math.floor(Math.random() * 100);
+        document.write("Random number between 1 to 100 : " + randomNumber + "<br>")
     }
     document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
 }
 // q8
-function parseInteger(){
+function parseInteger() {
 
     userInput = prompt("Enter your weight in kilogram");
 
-    if(userInput.indexOf('.')){
-        
+    if (userInput.indexOf('.')) {
+
         document.write("The Weight of user is : " + parseFloat(userInput) + " Kilogram")
     }
-    else{
+    else {
         document.write("The Weight of user is : " + parseInt(userInput) + " Kilogram")
 
-    
+
     }
-   document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
-    
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
 }
 
 // q9
-function randomNumbers(){
+function randomNumbers() {
     var randomNumber = Math.floor(Math.random() * 10) + 1;
     var userInput = +prompt("Enter a guess number : ")
-    if(userInput===randomNumber){
+    if (userInput === randomNumber) {
         alert("you Win")
     }
-    else{
+    else {
         alert("Try again !")
     }
     document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
 }
 
+// Chapter 31-34 : DATE METHODS
+
+// q1
+function currentDate() {
+    var currentDate = new Date();
+    document.write(currentDate);
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+}
+
+function currentMonth() {
+    var Month = ["Jan", "Feb", "Marach", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov"]
+    var currentMonth = new Date().getMonth();
+    alert("Current Month : " + Month[currentMonth]);
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+}
+
+function currentDay() {
+
+    var day = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"]
+    var currentDay = new Date().getDay();
+    alert = ("Today is " + day[currentDay]);
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+}
+
+function funDay() {
+
+    var currentDay = new Date().getDay();
+    var day = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"]
+
+    if (day[currentDay] === "Sun" || day[currentDay] === "Sun") {
+
+        document.write("Its fun day")
+    }
+    else {
+        document.write("Its NOT fun day")
+
+    }
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+}
+
+
+function firstFifteendays() {
+    var currentDate = new Date().getDay();
+
+    if (currentDate === 15 || currentDate < 16) {
+        alert('First Fifteen Days of the month')
+    } else {
+        alert('Last Fifteen Days of the month')
+    }
+}
+
+
+
+function currentTime() {
+
+    var currentDate = new Date();
+
+    document.write("Current Date : " + currentDate);
+    document.write("<br>")
+
+    var MidNightJan = new Date("jan 1, 1970").getTime();
+
+
+    var diff = currentDate - MidNightJan;
+    document.write("Elapsed Millisecond since January 1, 1970: " + diff);
+    document.write("<br>")
+
+    var Minutes = diff / (1000 * 60 * 60);
+
+    document.write("Elapsed Minutes since January 1, 1970: " + Minutes);
+
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+
+}
+
+function AmPM() {
+
+    var date = new Date().getHours();
+    if (date >= 12) {
+        alert("Its PM")
+    }
+    else {
+        alert("Its Am")
+    }
+
+}
+
+function laterday() {
+
+    var date = new Date("Dec 31, 2020");
+    document.write("Later Date" + date);
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+}
+
+function ramzanDays() {
+    var date = new Date("June 18, 2015");
+    var current = new Date();
+    var diff = current - date;
+
+    var RamzanDaysPassed = Math.round(diff / (1000 * 60 * 60 * 24))
+    alert(RamzanDaysPassed + " days have Passed since 1st Ramzan, 2015")
+}
+
+function daysLeft() {
+    var date = new Date("Jan 01, 2015");
+    var current = new Date();
+    var diff = current - date;
+
+    var secPassed = Math.round(diff / (1000 * 60))
+    document.write("On Refernce date " + date + "," + secPassed + "  Passed since begning of 2015");
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+}
+
+
+function timeCalculate() {
+    var dateTime = new Date("Jan 01, 2015 23:08:16")
+    document.write("Current date" + dateTime)
+
+
+    var beforeHr = new Date("Jan 01, 2015 22:08:16").getTime();
+
+    dateTime.setTime(beforeHr)
+    document.write("1 hour ago, it was " + dateTime)
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+}
+
+function yearCalculator() {
+    // // Year Calculator
+
+    var user = prompt("Enter your year");
+
+    var userYear = new Date(user).getTime();
+
+    var currentYear = new Date().getTime();
+
+    var diff = currentYear - userYear;
+    var age = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+
+    document.write("Your age is : " + age + "<br>");
+    document.write("Your birth year is : " + user)
+
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+}
+
+function yearCalculation() {
+    var currentDate = new Date();
+    alert("Current date" + currentDate)
+
+    var yearsBack = new Date("1992 Dec 05").getTime();
+
+    currentDate.setTime(yearsBack);
+
+    alert("100 years back it was" + currentDate);
+
+
+}
+
+function KEBill() {
+    // // KE bill
+
+    var customerName = prompt("Enter your Name : ");
+    var currentMonth = prompt("Enter your current Month: ");
+    var numberOfUnit = +prompt("Enter number of Units :");
+    var ChargesOfUnit = +prompt("Enter Charges per unit :");
+    var LatePaymentSurcharge = +prompt("Enter Late Payment Surcharge :");
+    var netAmount = +prompt("Enter Net Amount Payable (within Due Date)");
+
+    var net_Amount_Payable = numberOfUnit * ChargesOfUnit;
+    var Gross_Amount_Payable = netAmount + LatePaymentSurcharge;
 
 
 
 
+    document.write(`<h1>K-Electric Bill <br> </h1>`)
+    document.write(`<p>Customer Name: <b>${customerName}</b> <br> </p>`)
+    document.write(`<p>Month: <b>${currentMonth}</b> <br></p>`)
+    document.write(`<p> Number of Units: <b>${numberOfUnit} </b><br></p>`)
+    document.write(`<p>Charges per unit: <b>${ChargesOfUnit}</b> <br> </p>`)
+
+    document.write(`<p>Net Amount Payable (within Due Date): <b>${net_Amount_Payable}</b> <br> </p>`)
+    document.write(`<p>Late Payment Surcharge: <b>${LatePaymentSurcharge}</b> <br> </h4>`)
+    document.write(`<p>Gross Amount Payable (after Due Date): <b>${Gross_Amount_Payable}</b> <br> </p>`)
+
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
 
-
-
-
-
-
-
+}
