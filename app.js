@@ -2516,7 +2516,7 @@ function palindrome(){
 
 function titledcase(){
 
-    var userInput = prompt("Enter a word or Letter");
+    var userInput = prompt("Enter a word or Letter").toLowerCase();
 
     document.write("User Input : " + userInput + "<br>")
 
