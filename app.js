@@ -2297,3 +2297,275 @@ function KEBill() {
 
 
 }
+
+
+// Chapter 31-34 : DATE METHODS
+// Q1
+function currentDateTime() {
+
+    var date = new Date();
+    document.write(date)
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+    // return date;
+}
+
+
+
+
+// Q2
+
+function fullName() {
+
+    var fName = prompt("Enter you first Name: ")
+    var lName = prompt("Enter you Last Name: ")
+    var fullName = fName + " " + lName
+    document.write(fullName)
+
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+    // another method
+    // return firstName + " " + LastName;
+}
+
+// Q3
+
+function sum() {
+    var firstNum = +prompt("Enter you first Number: ")
+    var secNum = +prompt("Enter you Last Number: ")
+
+    var Numbers = firstNum + secNum;
+    document.write("Sum of two numbers: " + parseInt(Numbers));
+
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+    // another method
+    // return Numbers
+
+}
+
+function calculator(firstNum, secNum) {
+    var firstNum = +prompt("Enter you first Number: ")
+    var secNum = +prompt("Enter you Last Number: ");
+    var operator = prompt("Enter your operator : (+,-,*,/,%")
+    if (operator === "+") {
+
+        result = firstNum + secNum;
+        document.write("Sum of two number is : " + result)
+
+    }
+    else if (operator === "-") {
+
+        result = firstNum - secNum;
+        document.write("Subtraction of two number is : " + result)
+
+    }
+    else if (operator === "*") {
+
+        result = firstNum * secNum;
+        document.write("Multiplication of two number is : " + result)
+
+    }
+    else if (operator === "/") {
+
+        result = firstNum / secNum;
+        document.write("Divide of two number is : " + Math.round(result))
+
+    }
+    else if (operator === "%") {
+        result = firstNum % secNum;
+        document.write("Reminder of two number is : " + result)
+
+    }
+    else {
+        document.write("Invalid result")
+    }
+
+    // another method
+    //  return result;
+
+
+}
+
+function squares(squareNum) {
+
+    var squareNum = +prompt("Enter a number to find the sqaure of it  : ")
+
+    var findSquare = squareNum * squareNum;
+
+    document.write("Reminder of two number is : " + findSquare)
+
+    // another method
+    // return squareNum * squareNum;
+
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+
+}
+
+
+function factorial() {
+    // Factorial of n = n! = n × (n – 1) × (n – 2) × … × 1
+    var fact = 1;
+    var factorialNumber = +prompt("Enter a number to find the factorical that number : ")
+    document.write("Factorial Of " + factorialNumber + " ! <br>")
+
+    // factorial of negative number is not possible 
+    if (factorialNumber < 0) {
+        document.write("The factorial of the negative number doesnot perform")
+    }
+
+    // factorial of 0! = 1
+    else if (factorialNumber === 0) {
+
+        document.write("The factorial of 0 is 1")
+    }
+    else if (factorialNumber >= 1) {
+        for (i = 1; i <= factorialNumber; i++) {
+
+            fact *= i;
+            document.write(i + " ")
+
+        }
+        document.write(" =  " + fact)
+
+    }
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+}
+
+function counting() {
+    document.write("<h1>Countring</h1> <br>================")
+    var startNumber = +prompt("Enter a start Number : ");
+    var EndNumber = +prompt("Enter a End Number : ");
+
+
+    for (i = startNumber; i <= EndNumber; i++) {
+
+        document.write(i + "<br>")
+    }
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+}
+
+
+function calculateSquare(square){
+
+    return square*square;
+}
+function hyp ()
+{
+       
+
+}
+function calculateHypotenuse(base,prep){
+
+    function calculateSquare(base,prep){
+
+        var Findbase = base*base;
+        var FindPrep = prep*prep;
+        return FindPrep + Findbase ;
+    }
+
+    var base = +prompt("Enter a base :")
+    var prep = +prompt("Enter a prependicular :")
+    var sqauresofBP = calculateSquare(base,prep)
+    document.write("Hypotenous of the triangle is : " + sqauresofBP)
+
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+}
+
+
+function area(width,height){
+
+    var width = +prompt("Enter a width :");
+    var height = +prompt("Enter a height :");
+
+    A = width*height;
+
+    document.write("(Argument as variable) Area of the Rectangle is " + A);
+
+    document.write("<br>")
+
+    var area = 45 * 54 ;
+    document.write("(Argument as value) Area of the Rectangle is : " + area )
+    
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+}
+
+
+function palindrome(){
+
+
+    var text = '';
+    var userInput = prompt("Enter a string");
+
+    for (var i = userInput.length - 1; i >= 0; i--) { 
+        text += userInput[i]; 
+    }
+
+    if(text===userInput){
+        swal("its palindrome");
+    }
+    else{
+        swal("its not palindrome");
+    }
+}
+
+function titledcase(){
+
+    var userInput = prompt("Enter a word or Letter");
+
+    document.write("User Input : " + userInput + "<br>")
+
+    document.write("Title case : ")
+
+    var userInput = userInput.split(' ');
+    for (i = 0; i < userInput.length; i++) {
+        userInput[i] = userInput[i].charAt(0).toUpperCase() + userInput[i].slice(1) + " ";
+        document.write(userInput[i])
+    }
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+
+}   
+
+function letterOccurence (strings,character){
+
+    var strings = prompt("Enter a string :").toLowerCase();
+    var character = prompt("Enter a character: ")
+
+    var count = 0;
+    for (var i = 0; i < strings.length; i++) {
+        if (strings.charAt(i) == character)
+            count++;
+    }
+
+    document.write("Text : " + strings + "<br>")
+    document.write("There are " + count + " occurrence(s) of the word " + character);
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+
+}
+
+function CircumferenceAndArea(){
+
+    function Circumference(r){
+        var r = parseFloat(prompt("Enter a radius for Circumference of Cricle : "))
+        var coc = 2*Math.PI*r;
+        document.write("Circumference of circle " + coc + "<br>");
+    }
+    function Area(r){
+        var r = parseFloat(prompt("Enter a radius for Area of circle : "))
+        var area = Math.PI*r*r;
+        document.write("Area of the circle: " + area);
+    }
+
+    Circumference();
+    Area();
+    document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
+
+    
+}
