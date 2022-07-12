@@ -2449,72 +2449,71 @@ function counting() {
 }
 
 
-function calculateSquare(square){
+function calculateSquare(square) {
 
-    return square*square;
+    return square * square;
 }
-function hyp ()
-{
-       
+function hyp() {
+
 
 }
-function calculateHypotenuse(base,prep){
+function calculateHypotenuse() {
 
-    function calculateSquare(base,prep){
+    function calculateSquare(base, prep) {
 
-        var Findbase = base*base;
-        var FindPrep = prep*prep;
-        return FindPrep + Findbase ;
+        var Findbase = base * base;
+        var FindPrep = prep * prep;
+        return FindPrep + Findbase;
     }
 
     var base = +prompt("Enter a base :")
     var prep = +prompt("Enter a prependicular :")
-    var sqauresofBP = calculateSquare(base,prep)
-    document.write("Hypotenous of the triangle is : " + sqauresofBP)
+    var sqauresofBP = calculateSquare(base, prep)
+    document.write("Hypotenous of the triangle is : " + Math.sqrt(sqauresofBP))
 
     document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
 }
 
 
-function area(width,height){
+function area(width, height) {
 
     var width = +prompt("Enter a width :");
     var height = +prompt("Enter a height :");
 
-    A = width*height;
+    A = width * height;
 
     document.write("(Argument as variable) Area of the Rectangle is " + A);
 
     document.write("<br>")
 
-    var area = 45 * 54 ;
-    document.write("(Argument as value) Area of the Rectangle is : " + area )
-    
+    var area = 45 * 54;
+    document.write("(Argument as value) Area of the Rectangle is : " + area)
+
     document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
 }
 
 
-function palindrome(){
+function palindrome() {
 
 
     var text = '';
     var userInput = prompt("Enter a string");
 
-    for (var i = userInput.length - 1; i >= 0; i--) { 
-        text += userInput[i]; 
+    for (var i = userInput.length - 1; i >= 0; i--) {
+        text += userInput[i];
     }
 
-    if(text===userInput){
+    if (text === userInput) {
         swal("its palindrome");
     }
-    else{
+    else {
         swal("its not palindrome");
     }
 }
 
-function titledcase(){
+function titledcase() {
 
     var userInput = prompt("Enter a word or Letter").toLowerCase();
 
@@ -2530,9 +2529,9 @@ function titledcase(){
     document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
 
-}   
+}
 
-function letterOccurence (strings,character){
+function letterOccurence(strings, character) {
 
     var strings = prompt("Enter a string :").toLowerCase();
     var character = prompt("Enter a character: ")
@@ -2550,16 +2549,37 @@ function letterOccurence (strings,character){
 
 }
 
-function CircumferenceAndArea(){
+function longestWord(str){
 
-    function Circumference(r){
+var str = prompt("Enter your string : ")
+var splitArrayValue = str.split(' ');
+
+var storeWord = "";
+
+for (var i = 0; i < splitArrayValue.length; i++) {
+    if (splitArrayValue[i].length > storeWord.length) {
+        storeWord = splitArrayValue[i];
+    }
+}
+    // return storeWord;
+    document.write("Actual String is : " + str + "<br>")
+    document.write("Longest word in String is : " + storeWord)
+    
+}
+
+
+
+
+function CircumferenceAndArea() {
+
+    function Circumference(r) {
         var r = parseFloat(prompt("Enter a radius for Circumference of Cricle : "))
-        var coc = 2*Math.PI*r;
+        var coc = 2 * Math.PI * r;
         document.write("Circumference of circle " + coc + "<br>");
     }
-    function Area(r){
+    function Area(r) {
         var r = parseFloat(prompt("Enter a radius for Area of circle : "))
-        var area = Math.PI*r*r;
+        var area = Math.PI * r * r;
         document.write("Area of the circle: " + area);
     }
 
@@ -2567,5 +2587,5 @@ function CircumferenceAndArea(){
     Area();
     document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
-    
+
 }
