@@ -2449,27 +2449,18 @@ function counting() {
 }
 
 
-function calculateSquare(square) {
 
-    return square * square;
-}
-function hyp() {
-
-
-}
-function calculateHypotenuse() {
-
-    function calculateSquare(base, prep) {
-
+function calculateHypotenuse(base, prep) {
+        
+       var base = +prompt("Enter a base :")
+       var prep = +prompt("Enter a prependicular :")
         var Findbase = base * base;
         var FindPrep = prep * prep;
-        return FindPrep + Findbase;
+        var hyp = Math.sqrt(FindPrep + Findbase);
+        document.write("Hypotenous of the triangle is : " + hyp)
+
     }
 
-    var base = +prompt("Enter a base :")
-    var prep = +prompt("Enter a prependicular :")
-    var sqauresofBP = calculateSquare(base, prep)
-    document.write("Hypotenous of the triangle is : " + Math.sqrt(sqauresofBP))
 
     document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
