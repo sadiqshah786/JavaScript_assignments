@@ -2171,7 +2171,7 @@ function currentTime() {
     document.write("Elapsed Millisecond since January 1, 1970: " + diff);
     document.write("<br>")
 
-    var Minutes = diff / (1000 * 60 * 60);
+    var Minutes = diff / (1000 * 60);
 
     document.write("Elapsed Minutes since January 1, 1970: " + Minutes);
 
