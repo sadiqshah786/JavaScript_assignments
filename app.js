@@ -2299,7 +2299,7 @@ function KEBill() {
 }
 
 
-// Chapter 31-34 : DATE METHODS
+// Chapter 31-34 : Functions
 // Q1
 function currentDateTime() {
 
@@ -2451,20 +2451,19 @@ function counting() {
 
 
 function calculateHypotenuse(base, prep) {
-        
-       var base = +prompt("Enter a base :")
-       var prep = +prompt("Enter a prependicular :")
-        var Findbase = base * base;
-        var FindPrep = prep * prep;
-        var hyp = Math.sqrt(FindPrep + Findbase);
-        document.write("Hypotenous of the triangle is : " + hyp)
 
-    }
-
-
+    var base = +prompt("Enter a base :")
+    var prep = +prompt("Enter a prependicular :")
+    var Findbase = base * base;
+    var FindPrep = prep * prep;
+    var hyp = Math.sqrt(FindPrep + Findbase);
+    document.write("Hypotenous of the triangle is : " + hyp)
     document.write('<h2 style="text-align:center;"><a href="index.html">Back</a></h2>');
 
 }
+
+
+
 
 
 function area(width, height) {
@@ -2540,22 +2539,22 @@ function letterOccurence(strings, character) {
 
 }
 
-function longestWord(str){
+function longestWord(str) {
 
-var str = prompt("Enter your string : ")
-var splitArrayValue = str.split(' ');
+    var str = prompt("Enter your string : ")
+    var splitArrayValue = str.split(' ');
 
-var storeWord = "";
+    var storeWord = "";
 
-for (var i = 0; i < splitArrayValue.length; i++) {
-    if (splitArrayValue[i].length > storeWord.length) {
-        storeWord = splitArrayValue[i];
+    for (var i = 0; i < splitArrayValue.length; i++) {
+        if (splitArrayValue[i].length > storeWord.length) {
+            storeWord = splitArrayValue[i];
+        }
     }
-}
     // return storeWord;
     document.write("Actual String is : " + str + "<br>")
     document.write("Longest word in String is : " + storeWord)
-    
+
 }
 
 
@@ -2580,3 +2579,107 @@ function CircumferenceAndArea() {
 
 
 }
+
+
+
+
+// Chapter  38-42  FUNCTIONS, SWITCH STATEMENTS, WHILE... DO-WHILE LOOPS
+
+// Q1
+// var result = 1;
+// function power(a, b) {
+//     for (i = 1; i <= b; i++) {
+//         result = result * a;
+//         // another method 
+//         // result*=a;
+//     }
+//     return result;
+// }
+// var p = power(2, 10)
+// console.log(p)
+
+// // Q2
+
+// var year = +prompt("Enter year")
+// if (year % 4 === 0) {
+//     if (year % 400 === 0) {
+//         if (year % 100 === 0) {
+//             console.log(`${year} its leap year`)
+//         }
+//         else {
+//             console.log(`${year} its not leap year becasue not divided by 100`)
+//         }
+//     }
+//     else {
+//         console.log(`${year} its not leap year becuase not divide by 400`)
+//     }
+// }
+// else {
+//     console.log(`${year} its not leap year becuase not divided by 4`)
+// }
+
+
+// // Q3
+// function side(a, b, c) {
+//     return a + b + c / 2
+// }
+// function area(triSides, a, b, c) {
+//     return triSides * (triSides - a) * (triSides - b) * (triSides - c)
+// }
+// var sideA = +prompt("Enter a side 1")
+// var sideB = +prompt("Enter a side 2")
+// var sideC = +prompt("Enter a side 3")
+
+
+
+// var s = side(sideA, sideB, sideC)
+// var area = area(s, sideA, sideB, sideC)
+// console.log(`Area of triangle is : ${area}`)
+
+
+// // Q4
+// function avg(s1, s2, s3) {
+//     return (s1 + s2 + s3) / 3
+// }
+// function percentage(s1, s2, s3) {
+
+//     obtM = s1 + s2 + s3;
+//     return (obtM / 300) * 100;
+// }
+
+// function main(a, b) {
+//     // return a,b
+//     console.log(`Average of the student :  ${Math.round(a)}`)
+//     console.log(`Percentage of the student :  ${Math.round(b)}`)
+// }
+
+// var m1 = +prompt("Enter marks 1 out of 100")
+// var m2 = +prompt("Enter marks 2 out of 100")
+// var m3 = +prompt("Enter marks 3 out of 100")
+
+// var a = avg(m1, m2, m3)
+// var p = percentage(m1, m2, m3)
+// main(a, p)
+
+
+// Q5 
+
+function indexOf(str,findIndex){
+
+    for(i=0; i<str.length;i++){
+        if(str[i]===findIndex){
+            console.log(i)
+        }
+
+        // Incomplete logic 
+       // to be continue
+
+    }
+}
+indexOf("the quick",'u')
+
+
+// Q6 
+
+
+
