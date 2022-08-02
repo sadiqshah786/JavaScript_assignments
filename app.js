@@ -2667,12 +2667,12 @@ main(a, p)
 function indexOf(str, findIndex) {
     for (i = 0; i < str.length; i++) {
         if (findIndex === str.slice(i, findIndex.length + i)) {
-            console.log(i,str.slice(i, findIndex.length + i))
+            console.log(i, str.slice(i, findIndex.length + i))
         }
-        else{
+        else {
             console.log(-1)
             break;
-        }  
+        }
     }
 }
 var str = prompt("Enter a sentence : ")
@@ -2720,30 +2720,30 @@ console.log(removedVowels(str))
 
 
 // Q8
-function kmToMeter(km){
+function kmToMeter(km) {
 
     // 1km = 1000 meter
-    return km*1000;
+    return km * 1000;
 }
-function kmToInches(km){
+function kmToInches(km) {
 
     // 1km = 39370.0787inches
-    return km*39370.0787;
+    return km * 39370.0787;
 }
 
-function kmTofeet(km){
+function kmTofeet(km) {
 
     // 1km = 3280.8399feet
-    return km*3280.8399
+    return km * 3280.8399
 }
 
-function kmToCentimeter(km){
+function kmToCentimeter(km) {
 
     // 1km = 100000cm
 
-    return km*100000
+    return km * 100000
 }
-function KmConversion(m,inches,feet,cm){
+function KmConversion(m, inches, feet, cm) {
 
     console.log(`${km} is eqaul to ${m}`)
     console.log(`${km} is eqaul to ${inches}`)
@@ -2756,7 +2756,7 @@ var k2inc = kmToInches(km)
 var k2m = kmToMeter(km)
 var k2f = kmTofeet(km)
 
-KmConversion(k2cm,k2inc,k2f,k2m)
+KmConversion(k2cm, k2inc, k2f, k2m)
 
 
 
@@ -2779,25 +2779,26 @@ console.log(overTime(hours, currentSalary))
 
 
 // Q10
+function denominationsCashier(amount) {
+    if (amount > 0) {
 
+        var hund = Math.floor(amount / 100)
+        amount = amount % 100;
+
+        var fifty = Math.floor(amount / 50)
+        amount = amount % 50;
+
+        var ten = Math.floor(amount / 10)
+
+        console.log(`you will have ${hund} hundred notes ${fifty} fifty notes and ${ten} ten notes`)
+    }
+    else {
+        console.log("Invalid Input");
+
+    }
+}
 amount = +prompt("Enter a amount to withdraw : ")
-if (amount > 0) {
-
-    var hund = Math.floor(amount / 100)
-    amount = amount % 100;
-
-    var fifty = Math.floor(amount / 50)
-    amount = amount % 50;
-
-    var ten = Math.floor(amount / 10)
-
-    console.log(`you will have ${hund} hundred notes ${fifty} fifty notes and ${ten} ten notes`)
-}
-else {
-    console.log("Invalid Input");
-
-}
-
+denominationsCashier(amount)
 
 
 
