@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: aqua;
+            font-family: sans-serif;
+        }
+        .input{
+            font-size: 24px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            margin-top: 40px;
+        }
+        .text{
+        font-size: 30px;
+        color: black;
+        margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <input type="text" class="input" id="myText" onchange="reverse()">
+    <p class="text">The Result is:</p>
+    <p class="text" id="textP"></p>
+    </div>
+    <script>
+        function reverse(){
+        const input = document.getElementById("myText").value
+        const text = document.getElementById('textP')
+        const inputLength = input.length
+        for(var i = inputLength-1 ; i >= 0 ; i--){
+           text.innerHTML += input[i]
+        }
+        }
+    </script>
+</body>
+</html>
