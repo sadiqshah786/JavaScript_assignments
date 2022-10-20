@@ -1,4 +1,7 @@
+//Hello world
 
+var a = 'hello world'
+console.log(a)
 
 // Chapter 1
 // question 1 
